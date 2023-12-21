@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    color: white;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #453a63;
+}
+
+.calculatorContainer {
+    padding: 5px;
+    font-size: 12px;
+    background-color: #dfa726;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.operationButton{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 12px;
+    align-items: center;
+    background-color: #0e0d0d;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.equalButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    gap: 10px;
+    background-color: #453a63;
+    padding: 12px;
+}
+
+.operationRow {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+.display {
+    min-width: 600px;
+    min-height: 50px;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    background-color: #987c89;
+    justify-content: space-between;
+}
+
+.inputNumber {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100%;
+    min-width: 100%;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.inputNumber:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+     input::-webkit-inner-spin-button
+     {
+        -webkit-appearance: none;
+     }
